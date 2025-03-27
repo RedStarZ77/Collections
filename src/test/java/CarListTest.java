@@ -5,11 +5,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CarListTest {
 
-    private CarList carList;
+    private CarList<Car> carList;
 
     @BeforeEach
     public void setUp() throws Exception {
-        carList = new CarLinkedList();
+        carList = new CarLinkedList<>();
         for (int i = 0; i < 100; i++) {
             carList.add(new Car("Brand" + i, i));
         }
